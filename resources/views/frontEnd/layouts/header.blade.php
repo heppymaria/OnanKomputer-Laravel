@@ -33,26 +33,27 @@
                             <div class="top_bar_user">
                             <form class="form-inline my-6 my-lg-0">
                             <div id="FontMenu">
+                                <h2>Otniel Simanungkalit</h2>
                             <a href="{{url('/infoFAQ')}}"><i class="fa fa-question-circle" style="font-size:22px"></i> FAQ</a>
                             <a href="{{url('/viewcompare')}}"><i class="fa fa-balance-scale" style="font-size:22px"></i> Compare</a>
                             <a href="{{url('/viewcart')}}"><i class="fa fa-cart-plus" style="font-size:22px"></i> Cart</a>
                             @if(Auth::check())
                             <a href="{{url('/myaccount')}}"><i class="fa fa-user"></i>My Account</a>
                             <a href="{{ url('/logout') }}"><i class="fa fa-lock"></i> Logout </a>
-                                
+
                             @else
                                 <a href="{{url('/login_page')}}"><i class="fa fa-user"style="font-size:22px"></i> Login</a>
                                 <a href="{{url('/register_page')}}"><i class="fa fa-registered"style="font-size:20px"></i> Register</a>
                             @endif
                             </div>
-                    
+
                             </form>
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>      
+            </div>
         </div>
 </div>
 
@@ -73,7 +74,7 @@
                             <div class="header_search_content">
                                 <div class="header_search_form_container">
                                     <form action="/" method ="GET" class="header_search_form clearfix">
-                                        <input type="text" name="cari" id="query" value="{{ request()->input('search') }}" required="required" 
+                                        <input type="text" name="cari" id="query" value="{{ request()->input('search') }}" required="required"
                                         class="header_search_input" placeholder="Search product...">
                                         <button type="submit" class="header_search_button trans_300" value="Submit">
                                             <i class="fas fa-search" style="font-size:20px"></i></button>
@@ -83,7 +84,7 @@
                         </div>
                         </div>
                     </div>
-            </div>         
+            </div>
 </div>
 
 
@@ -115,4 +116,4 @@
 
 
 
-    
+
